@@ -1,0 +1,58 @@
+// habits styles
+
+add-icon-size = 24px
+habit-size = 150px
+habit-gap = 24px
+
+#habitview-hidden-template
+    display none
+
+#habits
+    user-select none
+    display grid
+    gap: habit-gap
+    grid-template-columns: repeat(auto-fit, habit-size)
+    grid-template-rows: repeat(auto-fit, habit-size)
+    justify-content: center
+    h1 
+        position absolute
+        width 100%
+        padding 15px
+        box-sizing: border-box
+        left 0
+        top header-height * 2
+    .habit-inner
+        pointer-events: none
+
+
+.habit
+    position relative
+    border-radius 7px
+    padding 7px
+    box-sizing: border-box
+    height habit-size
+    width habit-size
+    margin auto
+    background-color alpha(cd-bright, 0.82)
+    color cd-dark
+    font-weight: bold
+
+
+.habit-inner
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    // display: flex
+    // justify-content: space-between
+    // box-sizing: border-box
+
+.add-icon
+    position absolute
+    top 0
+    right 0
+    color cd-flash
+    // width: habit-size
+    // height habit-size
+    width: add-icon-size
+    height add-icon-size
