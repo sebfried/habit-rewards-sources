@@ -1,3 +1,6 @@
 [submodule "source/buttonstylemodule"]
 	path = source/buttonstylemodule
 	url = git@github.com:sebfried/habit-rewards-sources-buttonstylemodule.git
+[submodule "source/sebstyle"]
+	path = source/sebstyle
+	url = git@github.com:sebfried/habit-rewards-sources-sebstyle.git
